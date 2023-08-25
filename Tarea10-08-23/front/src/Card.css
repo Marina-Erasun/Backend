@@ -1,0 +1,56 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .track-card {
+    width: calc(55% - 30px);
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.2);
+    height: 160px;
+    color: white;
+    background-color: rgb(44, 99, 150);
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+  }
+  h1 {
+    font-size: larger;
+    color: white;
+  }
+  p {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 20px;
+    transition: color 0.3s;
+  }
+  .track-card h1.hoover:hover {
+    color: white;
+  }
+  .track-card h2.hoover:hover {
+    color: white;
+  }
+  .track-card:hoover {
+    text-decoration: aquamarine;
+  }
+  .track-card h1,
+  .track-card p {
+    margin: 0;
+    line-height: 1;
+  }
+  @media (max-width: 768px) {
+    .track-card {
+      width: calc(50% - 20px);
+    }
+  }
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 1rem;
+    }
+  }
